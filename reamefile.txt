@@ -1,0 +1,81 @@
+
+///
+
+Login User 
+
+Method : Post
+
+http://localhost:4000/api/v1/auth/login
+
+body = {
+    "email": "dipak@gmail.com",
+    "password": "123456"
+}
+
+
+Register User 
+
+Method : Post
+
+http://localhost:4000/api/v1/auth/register-user
+
+body = {
+    "name": "Dipak",
+    "email": "dipak1@gmail.com",
+    "mobileNumber": "8200638322",
+    "password": "123456",
+    "address": "Surat"
+}
+
+
+***********************************************************************
+
+Pass TOken On Header After Login
+
+
+Get Notes List
+
+Method : Get
+
+http://localhost:4000/api/v1/notes/list?skip=0&limit=10
+
+// Skip Limit Use For Pagignation
+
+
+***********************************************************************
+
+
+create Note
+http://localhost:4000/api/v1/notes
+
+body={
+    "title": "Test Note444",
+    "description": "Test Description 1"
+}
+
+
+***********************************************************************
+
+
+Update Note 
+
+Method : Post
+
+http://localhost:4000/api/v1/notes/{{noteId}}
+
+body={
+    "title": "Test Note444",
+    "description": "Test Description 1"
+}
+
+
+***********************************************************************
+
+
+
+deleteNote
+
+Method : Delete
+
+http://localhost:4000/api/v1/notes/{{noteId}}
+
